@@ -1,0 +1,111 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: #fff;
+  background-color: black;
+}
+
+.cabecalho {
+  background-color: #a7a3a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo_dnc {
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.cabecalho__menu-amburguer {
+  width: 70px;
+  height: 70px;
+  background-image: url(./assets/ícone_usuario.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  width: 22vh;
+}
+
+.container_botao:checked ~ .lista-menu {
+  display: block;
+}
+
+.lista-menu_link {
+  display: flex; /* Utiliza flexbox para alinhamento */
+  align-items: center; /* Alinha o ícone e o texto verticalmente */
+  justify-content: center; /* Centraliza o ícone e o texto horizontalmente */
+  background-color: #a7a3a3; /* Define a cor de fundo */
+  color: rgb(0, 0, 0); /* Define a cor do texto */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  text-decoration: none; /* Remove a decoração do texto (sublinhado) */
+  padding: 10px; /* Adiciona espaço interno para tornar o link mais clicável */
+  font-weight: bold;
+  padding-right: 120px;
+}
+
+.lista-menu_link img {
+  margin-left: 5px; /* Adiciona espaço entre o ícone e o texto */
+}
+
+.container_botao {
+  display: none;
+}
+
+.container_usuario {
+  font-size: 50px;
+  color: black;
+}
+.container_lesson {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lesson {
+  width: 50%; /* Define a largura de todas as lições */
+  background-color: #333; /* Cor de fundo para as lições */
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.container_lesson h2 {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 15px 15px 15px; /* Aumenta o espaçamento ao redor do texto */
+  display: flex;
+  justify-content: space-between; /* Espaça os itens no header */
+  align-items: center; /* Alinha os itens no centro verticalmente */
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.arrow {
+  margin-left: auto; /* Empurra a seta para o final */
+}
+
+.video {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
